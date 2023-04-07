@@ -56,6 +56,7 @@
   margin-top: 15%;
   font-size: 100px;
   text-align: left;
+  
 }
 
 #bio{
@@ -97,6 +98,9 @@ footer p {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+  }
+  #in p {
+    font-size: 4rem;
   }
   #image-box {
     padding-top: 20%;
