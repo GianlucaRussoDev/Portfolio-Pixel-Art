@@ -35,7 +35,8 @@
 #image-box {
   padding-top: 5%;
   padding-bottom: 4%;
-  
+  margin-left: 4%;
+  margin-right: 4%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,8 +45,8 @@
 
 #image-box img {
  margin: 2%;
- height: 340px;
- width: auto;
+ height: 20%;
+ width: 20%;
 }
 
 #in p {
@@ -97,7 +98,14 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  #image-box img {
+    margin: 2%;
+    height: 60%;
+    width: 60%;
+   }
   #list-work {
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
