@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Squarified ;
+    src: url(Squarified.ttf);
+}
+/*Caratteristiche font pagina*/
+* {
+    font-family: "Squarified";
+    background-color: #eeeeee;
+    font-size: 1.4rem;
+}
+
+/*Main + logo + font*/
+#main {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+}
+
+#logo{
+  margin-top: 20%;
+  text-align: center; 
+}
+
+#logofont{
+  margin-top: 20%;
+  flex-basis: 50%;
+  text-align: center; 
+}
+
+/*Card*/
+
+
+#image-box {
+  padding-top: 5%;
+  padding-bottom: 4%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-box img {
+ margin: 2%;
+ height: 340px;
+ width: auto;
+}
+
+#in p {
+  margin-top: 15%;
+  font-size: 100px;
+  text-align: left;
+}
+
+#bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list-work {
+  margin: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 2%;
+}
+
+footer {
+  padding: 10%;
+}
+
+
+@media screen and (max-width: 768px) {
+  #logofont{
+    margin-top: 10%;
+    flex-basis: 50%;
+    text-align: center; 
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  #image-box {
+    padding-top: 20%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #list-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
