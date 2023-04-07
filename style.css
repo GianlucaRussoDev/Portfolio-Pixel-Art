@@ -102,17 +102,13 @@ footer p {
     padding-right: 1%;
   }
 
-
   #logo img {
     width: 60%; 
   }
-  
-
   #logofont{
     margin-top: 10%;
     flex-basis: 50%;
     text-align: center;
-    
   }
   #main {
     display: flex;
@@ -133,8 +129,7 @@ footer p {
   }
   #image-box img {
     margin: 2%;
-    height: 40%;
-    width: 40%;
+    width: 55%;
    }
   #list-work {
     padding-left: 5%;
@@ -144,6 +139,10 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+  
+footer p {
+  font-size: 0.5rem;
+}
 }
 
 
