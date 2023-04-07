@@ -1,13 +1,16 @@
 @font-face {
     font-family: Squarified ;
     src: url(Squarified.ttf);
+    font-family: PressStart2P ;
+    src: url(PressStart2P.ttf);
 }
 /*Caratteristiche font pagina*/
 * {
-    font-family: "Squarified";
+    font-family: "PressStart2P";
     background-color: #eeeeee;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
+
 
 /*Main + logo + font*/
 #main {
@@ -75,6 +78,11 @@
 
 footer {
   padding: 10%;
+  
+}
+
+footer p {
+  font-size: 0.8rem;
 }
 
 
