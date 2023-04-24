@@ -1,11 +1,23 @@
-// script.js
-function submit() {
+function sendMail() {
     var params = {
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById(email_id).value,
-        message : document.getElementById("message").value
-    }
-    emailjs.send("service_k2jl6cb" , "template_k41xzyk" , params).then(function (res) {
-        alert("Success! " + res.status)
-    })
-}
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "YOUR_SERVICE_ID";
+    const templateID = "YOUR_TEMPLETE_ID";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res=>{
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
+  

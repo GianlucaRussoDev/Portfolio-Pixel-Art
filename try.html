@@ -1,108 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://0xhappening.github.io/Portfolio-Pixel-Art/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Gianluca Russo">
-    <meta property="og:description" content="Sviluppatore Front - End ">
-    <meta property="og:image" content="https://0xhappening.github.ioanteprima.png">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="0xhappening.github.io">
-    <meta property="twitter:url" content="https://0xhappening.github.io/Portfolio-Pixel-Art/index.html">
-    <meta name="twitter:title" content="Gianluca Russo">
-    <meta name="twitter:description" content="Sviluppatore Front - End ">
-    <meta name="twitter:image" content="https://0xhappening.github.ioanteprima.png">
-    <!--  Meta Tags -->
-    <title>Gianluca Russo</title>
-    <meta name="description" content="Sviluppatore Front - End ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
 
-    <!--  emailjs script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('YWiqscEfYONp0qV9Z');
-        })();
+      (function () {
+        emailjs.init("J01QMSmqj93QY8gmJ");
+      })();
     </script>
-
-</head>
-
- <body>
-<!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">GR</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                </div>
-            </div>
+  </head>
+  <body>
+    <div class="container border mt-3 bg-light">
+      <div class="row">
+        <div class="col-md-6 p-5 bg-primary text-white">
+          <h1>Hi there!</h1>
+          <h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
+          </h4>
         </div>
-    </nav>
-<!-- Logo/Logo Font -->
-<div id="main">
-    <div id="logo">
-        <img src="avatargianluca.png" alt="">
+        <div class="col-md-6 border-left py-3">
+          <h1>Contact form</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
     </div>
-    <div id="logofont">
-      <h1>Gianluca Russo</h1>
-      <br>
-      <h2>Front End Dev</h2>
-    </div>
-  </div>
-<!-- about. -->
-<div id="in">
-    <p>About.</p>
-</div>
-
-<!-- cards -->
-<div id="image-box">
-    <img src="p1.png" alt="Immagine 1">
-    <img src="p2.png" alt="Immagine 2">
-    <img src="p3.png" alt="Immagine 3">
-    <img src="p4.png" alt="Immagine 4">
-</div> 
-
-<div id="bio">
-    <p>
-     </p>
-
-</div>
-
-<!--Email-->
-<div>
-    <input type="text" id="fullName" placeholder="full Name" required /> <br/>
-    <input type="email" id="email_id" placeholder="Email Id" required /> <br/>
-    <textarea id="message" placeholder="message" required></textarea> <br/>
-    <button onclick="SendMail()">Send</button>
-</div>
-
-<!-- emailjs -->
-
-
-
-<footer>
-    <p>Gianluca Russo</p>
-    <br>
-    <p>Bellaria - Rimini - Italy</p>
-    <br>
-    
-</footer>
-    
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> 
-
- </body>
+  </body>
 </html>
