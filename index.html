@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">GR</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" id="navbutton" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -97,6 +97,7 @@
             class="form-control"
             id="name"
             placeholder="Enter name"
+            required
           />
         </div>
         <div class="form-group">
@@ -106,11 +107,12 @@
             class="form-control"
             id="email"
             placeholder="Enter email"
+            required
           />
         </div>
         <div class="form-group">
           <h5 for="message">Message</h5>
-          <textarea class="form-control" id="message" rows="3"></textarea>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
         <br>
         </span>
         <button class="btn btn-primary " onclick="sendMail()">Submit</button>
