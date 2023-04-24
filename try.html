@@ -23,6 +23,15 @@
     <title>Gianluca Russo</title>
     <meta name="description" content="Sviluppatore Front - End ">
 
+    <!--  emailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YWiqscEfYONp0qV9Z');
+        })();
+    </script>
+
 </head>
 
  <body>
@@ -36,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="try.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
                 </div>
             </div>
         </div>
@@ -91,7 +100,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
+                            <input type="text" id="fullName" name="name" class="form-control">
                             <label for="name" class="">Nome</label>
                         </div>
                     </div>
@@ -100,7 +109,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="text" id="email_id" name="email" class="form-control">
                             <label for="email" class="">Email</label>
                         </div>
                     </div>
@@ -138,31 +147,14 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Invia</a>
+                <a class="btn btn-primary" onclick="SendMail()">Invia</a>
             </div>
             <div class="status"></div>
         </div>
 
 <!-- emailjs -->
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init('YWiqscEfYONp0qV9Z');
-        console.log('inited');
-      })();
-    </script>
-    <script>
-      const handleForm = async (e) => {
-        try {
-          await emailjs.sendForm('service_k2jl6cb', 'template_ri4xa9a', document.getElementById('contact-form'));
-          alert('email sent!');
-        } catch (error) {
-          console.error(error);
-          alert('Failed to send email');
-        }
-      };
-    </script>
+
 
 <footer>
     <p>Gianluca Russo</p>
