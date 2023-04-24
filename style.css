@@ -28,6 +28,7 @@ body {
 .mb-4 {
   padding-left: 4%;
   padding-right: 4%;
+  padding-top: 8%;
 }
 
 /*Main + logo + font*/
@@ -143,7 +144,7 @@ a:hover {color: white;
   }
 
   #logo img {
-    width: 40%; 
+    width: 50%; 
   }
   #logofont{
     margin-top: 40%;
