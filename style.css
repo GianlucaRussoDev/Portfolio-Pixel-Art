@@ -11,6 +11,13 @@
     font-size: 1.2rem;    
 }
 
+/*try mail DA ELIMINARE*/
+
+INPUT, textarea, button {
+  margin: 4px 0;
+  padding: 8px;
+}
+
 body {
   padding-left: 4%;
   padding-right: 4%;
