@@ -26,11 +26,8 @@ body {
 }
 
 .mb-4 {
-  padding-top: 4%;
   padding-left: 4%;
   padding-right: 4%;
-  
-
 }
 
 /*Main + logo + font*/
@@ -124,7 +121,7 @@ footer p {
   padding-top: 12px;
 }
 
-a {
+footer a {
   font-size: 1rem;
 }
 
@@ -139,7 +136,7 @@ a {
   }
 
   #logo img {
-    width: 60%; 
+    width: 40%; 
   }
   #logofont{
     margin-top: 10%;
@@ -166,7 +163,7 @@ a {
   }
   #image-box img {
     margin: 2%;
-    width: 55%;
+    width: 40%;
    }
   #list-work {
     padding-left: 5%;
