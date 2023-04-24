@@ -41,7 +41,7 @@ body {
 }
 
 .avatar {
-  height: auto;
+  height: 100%;
   width: auto;
 }
 
