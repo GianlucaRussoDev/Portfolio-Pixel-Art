@@ -22,6 +22,18 @@
     <!--  Meta Tags -->
     <title>Gianluca Russo</title>
     <meta name="description" content="Sviluppatore Front - End ">
+    <!--  Mailjs  -->
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YWiqscEfYONp0qV9Z");
+      })();
+    </script>
 
 </head>
 
@@ -72,97 +84,43 @@
 </div>
 
 <!--Email-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contattami</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Richiste? info? Scrivimi </p>
-
+<div class="mb-4">
     <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Nome</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Oggetto</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Messaggio</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Invia</a>
-            </div>
-            <div class="status"></div>
+      
+      <div class="col-md-6 border-left py-3 ">
+        <h3>Contattami
+            Richiste? info? Scrivimi</h3>
+        <div class="form-group">
+          <h5 for="name">Name</h5>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
         </div>
+        <div class="form-group">
+          <h5 for="email">Email</h5>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <h5 for="message">Message</h5>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        <br>
+        </span>
+        <button class="btn btn-primary " onclick="sendMail()">Submit</button>
+      </div>
+    </div>
+  </div>
 
 <!-- emailjs -->
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init('YWiqscEfYONp0qV9Z');
-        console.log('inited');
-      })();
-    </script>
-    <script>
-      const handleForm = async (e) => {
-        try {
-          await emailjs.sendForm('service_k2jl6cb', 'template_ri4xa9a', document.getElementById('contact-form'));
-          alert('email sent!');
-        } catch (error) {
-          console.error(error);
-          alert('Failed to send email');
-        }
-      };
-    </script>
+
 
 <footer>
     <p>Gianluca Russo</p>

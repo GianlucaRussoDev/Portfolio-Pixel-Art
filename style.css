@@ -11,12 +11,16 @@
     font-size: 1.2rem;    
 }
 
-/*try mail DA ELIMINARE*/
+/*h5 mail title*/
 
-INPUT, textarea, button {
+.form-group {
   margin: 4px 0;
-  padding: 8px;
+  padding-top: 48px;
 }
+
+
+
+
 
 body {
   padding-left: 4%;
@@ -115,6 +119,10 @@ footer {
 
 footer p {
   font-size: 0.8rem;
+}
+
+.textarea{
+  padding-top: 12px;
 }
 
 
