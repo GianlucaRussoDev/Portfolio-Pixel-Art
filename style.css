@@ -1,8 +1,8 @@
 @font-face {
     font-family: Squarified ;
-    src: url(Squarified.ttf);
+    src: url(/Portfolio\ Pixel\ Art/assets/fonts/Squarified.ttf);
     font-family: PressStart2P ;
-    src: url(PressStart2P.ttf);
+    src: url(/Portfolio\ Pixel\ Art/assets/fonts/PressStart2P.ttf);
     font-display: swap
 }
 /*Caratteristiche font pagina*/
@@ -63,6 +63,12 @@ body {
  
 }
 
+p {
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 2;
+}
+
 /*Card*/
 
 
@@ -92,8 +98,10 @@ body {
 
 #bio{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 48px;
 }
 
 #list-work {
@@ -141,10 +149,11 @@ a:hover {color: white;
   body {
     padding-left: 1%;
     padding-right: 1%;
+    font-size: 24px;
   }
 
   #logo img {
-    width: 50%; 
+    width: 60%; 
   }
   #logofont{
     margin-top: 40%;
@@ -152,14 +161,25 @@ a:hover {color: white;
     text-align: center;
     
   }
+
+  h2 {
+    font-size: 16px;
+  }
   #main {
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
   }
+  p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    line-height: 2;
+
+  }
+  
   #in p {
-    font-size: em;
+    font-size: 1em;
   }
   #image-box {
     padding-top: 20%;
@@ -170,8 +190,9 @@ a:hover {color: white;
     align-items: center;
   }
   #image-box img {
+    padding-top: 40px;
     margin: 2%;
-    width: 40%;
+    width: 60%;
    }
   #list-work {
     padding-left: 5%;
