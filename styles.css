@@ -1,8 +1,8 @@
 @font-face {
     font-family: Squarified ;
-    src: url(/Portfolio\ Pixel\ Art/assets/fonts/Squarified.ttf);
+    src: url(./assets/fonts/Squarified.ttf);
     font-family: PressStart2P ;
-    src: url(/Portfolio\ Pixel\ Art/assets/fonts/PressStart2P.ttf);
+    src: url(./assets/fonts/PressStart2P.ttf);
     font-display: swap
 }
 /*Caratteristiche font pagina*/
