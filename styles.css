@@ -69,6 +69,39 @@ p {
   line-height: 2;
 }
 
+/*modifiche css per pegina cv -start-*/
+
+#cvid {
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-left: 12px;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  
+
+}
+
+#pgid {
+  width: 400px;
+  padding-left: 40px;
+}
+
+
+
+li {
+  font-size: 24px;
+}
+
+.boxcvclass  {
+  padding-top: 40px;
+  margin: 2%;
+}
+
+h2 {
+  padding-bottom: 80px;
+}
+/*modifiche css per pegina cv -end-*/
+
 /*Card*/
 
 
@@ -151,6 +184,7 @@ a:hover {color: white;
     padding-right: 1%;
     font-size: 24px;
   }
+  
 
   #logo img {
     width: 60%; 
@@ -202,6 +236,23 @@ a:hover {color: white;
     justify-content: center;
     align-items: center;
   }
+
+  
+/*modifiche css per pegina cv -start-*/
+
+
+#pgid {
+  width: 200px;
+  padding-left: 0px;
+}
+
+li {
+  font-size: 12px;
+}
+
+
+/*modifiche css per pegina cv -end-*/
+
   
 
 
