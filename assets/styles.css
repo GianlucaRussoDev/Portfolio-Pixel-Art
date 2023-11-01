@@ -1,8 +1,8 @@
 @font-face {
     font-family: Squarified ;
-    src: url(./assets/fonts/Squarified.ttf);
+    src: url("./assets/fonts/Squarified.ttf");
     font-family: PressStart2P ;
-    src: url(./assets/fonts/PressStart2P.ttf);
+    src: url("./fonts/PressStart2P.ttf");
     font-display: swap
 }
 /*Caratteristiche font pagina*/
@@ -25,7 +25,7 @@ body {
   padding-right: 4%;
 }
 
-.mb-4 {
+.contact-form {
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 8%;
