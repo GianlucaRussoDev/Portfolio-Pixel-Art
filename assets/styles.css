@@ -26,9 +26,7 @@ body {
 }
 
 .contact-form {
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 8%;
+  padding: 8% 4%;
 }
 
 /*Main + logo + font*/
